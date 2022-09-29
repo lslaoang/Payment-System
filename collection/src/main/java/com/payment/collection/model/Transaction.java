@@ -1,22 +1,24 @@
 package com.payment.collection.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Date;
 import java.util.List;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@Entity
 public class Transaction {
 
+    @Id
     private String id;
     private Date date;
 
-    Customer customer;
+    private Customer customer;
 
     @OneToMany
     List<Item> itemList;

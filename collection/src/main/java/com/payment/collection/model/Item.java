@@ -1,12 +1,12 @@
 package com.payment.collection.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@AllArgsConstructor
-@Data
+@Entity
 public class Item {
 
+    @Id
     private String id;
     private String description;
 }
