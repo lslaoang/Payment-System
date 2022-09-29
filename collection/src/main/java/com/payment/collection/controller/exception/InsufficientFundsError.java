@@ -1,4 +1,4 @@
 package com.payment.collection.controller.exception;
 
-public class InsufficientFundsError {
+public class InsufficientFundsError extends RuntimeException{
 }

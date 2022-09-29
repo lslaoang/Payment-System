@@ -1,4 +1,4 @@
 package com.payment.collection.controller.exception;
 
-public class TransactionNotFoundError {
+public class TransactionNotFoundError  extends RuntimeException{
 }
