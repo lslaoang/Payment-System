@@ -18,7 +18,7 @@ public class InitData implements CommandLineRunner {
     @Override
     public void run(String... args) {
         Transaction transaction = new Transaction();
-        transaction.setName("Meralco");
+        transaction.setDescription("Meralco");
 
         Item item = new Item();
         item.setName("Meralco");
@@ -29,7 +29,7 @@ public class InitData implements CommandLineRunner {
         paymentRepository.save(transaction);
 
         Transaction t = new Transaction();
-        t.setName("Maynilad");
+        t.setDescription("Maynilad");
 
         Item i = new Item();
         i.setName("Meralco");

@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @ToString
 @RequiredArgsConstructor
 @AllArgsConstructor
-@Entity
+@Entity(name = "item")
 public class Item {
 
     @Id

@@ -7,13 +7,13 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "transaction")
 public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    private String name;
+    private String description;
     private Double amount;
 
     @ManyToOne(cascade = {CascadeType.ALL})
