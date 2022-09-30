@@ -15,17 +15,21 @@ public class InitData implements CommandLineRunner {
         this.paymentRepository = paymentRepository;
     }
 
+    private Double initialFund = 10000.66;
+
     @Override
     public void run(String... args) {
+
         Transaction transaction = new Transaction();
         transaction.setDescription("Meralco");
 
         Item item = new Item();
         item.setName("Meralco");
-        item.setFundAllocated(2000.0);
+        item.setAmount(2000.0);
 
         transaction.setItem(item);
-        transaction.setAmount(1000.2);
+        initialFund-= item.getAmount();
+        transaction.setRemainingFund(initialFund);
         paymentRepository.save(transaction);
 
         Transaction t = new Transaction();
@@ -33,10 +37,11 @@ public class InitData implements CommandLineRunner {
 
         Item i = new Item();
         i.setName("Meralco");
-        i.setFundAllocated(2000.0);
+        i.setAmount(2000.0);
 
         t.setItem(i);
-        t.setAmount(1034.2);
+        initialFund-= i.getAmount();
+        t.setRemainingFund(initialFund);
         paymentRepository.save(t);
     }
 }

@@ -14,7 +14,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String description;
-    private Double amount;
+    private Double remainingFund;
 
     @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "item_id")

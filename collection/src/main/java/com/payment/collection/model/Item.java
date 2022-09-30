@@ -19,6 +19,6 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
-    private Double fundAllocated;
+    private Double amount;
 
 }
