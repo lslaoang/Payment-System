@@ -12,12 +12,12 @@ public class PaymentExceptionHandler {
 
     @ExceptionHandler(InsufficientFundsError.class)
     public ResponseEntity insufficientFund(){
-        return new ResponseEntity(HttpStatus.ACCEPTED);
+        return new ResponseEntity("Insufficient funds.",HttpStatus.ACCEPTED);
     }
 
     @ExceptionHandler(TransactionNotFoundError.class)
-    public ResponseEntity transacTionNotFound(){
-        return new ResponseEntity(HttpStatus.ACCEPTED);
+    public ResponseEntity transactionNotFound(){
+        return new ResponseEntity("Invalid transaction or transaction not found.",HttpStatus.ACCEPTED);
     }
 
 }

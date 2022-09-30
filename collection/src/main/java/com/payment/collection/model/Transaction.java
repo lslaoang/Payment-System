@@ -5,9 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.Date;
-import java.util.List;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
@@ -16,10 +14,7 @@ public class Transaction {
 
     @Id
     private String id;
-    private Date date;
+    private String name;
+    private BigDecimal amount;
 
-    private Customer customer;
-
-    @OneToMany
-    List<Item> itemList;
 }
