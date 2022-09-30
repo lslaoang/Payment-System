@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a82c88a-e57b-43f8-8b2b-9a26fcfec6dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/bootstrap/InitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/bootstrap/InitData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/model/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/main/java/com/payment/collection/model/Transaction.java" afterDir="false" />
     </list>
@@ -92,7 +90,7 @@
       <updated>1664434905906</updated>
       <workItem from="1664434907902" duration="3630000" />
       <workItem from="1664441147417" duration="1002000" />
-      <workItem from="1664531394463" duration="3664000" />
+      <workItem from="1664531394463" duration="5245000" />
     </task>
     <task id="LOCAL-00001" summary="add IDE support files">
       <created>1664434956931</created>
@@ -164,7 +162,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664533681050</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add Item entity to transaction">
+      <created>1664535322240</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664535322240</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor name to description">
+      <created>1664535629814</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664535629814</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add logic to amount">
+      <created>1664536438219</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664536438219</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +203,10 @@
     <MESSAGE value="create basic API function" />
     <MESSAGE value="add JPA repository" />
     <MESSAGE value="update service" />
-    <option name="LAST_COMMIT_MESSAGE" value="update service" />
+    <MESSAGE value="add Item entity to transaction" />
+    <MESSAGE value="refactor name to description" />
+    <MESSAGE value="add logic to amount" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logic to amount" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
