@@ -3,6 +3,7 @@ package com.payment.collection.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
@@ -10,8 +11,7 @@ import javax.persistence.*;
 @RequiredArgsConstructor
 @AllArgsConstructor
 @Entity(name = "item")
-public class Item {
-
+public class Item implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

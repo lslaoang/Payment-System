@@ -6,11 +6,12 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @Entity(name = "transaction")
-public class Transaction {
+public class Transaction implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
