@@ -1,11 +1,10 @@
 package com.payment.collection.bootstrap;
 
+import com.payment.collection.model.Item;
 import com.payment.collection.model.Transaction;
 import com.payment.collection.repo.PaymentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.math.BigDecimal;
 
 @Component
 public class InitData implements CommandLineRunner {
@@ -19,15 +18,25 @@ public class InitData implements CommandLineRunner {
     @Override
     public void run(String... args) {
         Transaction transaction = new Transaction();
-        transaction.setId("util-1");
         transaction.setName("Meralco");
-        transaction.setAmount(new BigDecimal("1000.2"));
+
+        Item item = new Item();
+        item.setName("Meralco");
+        item.setFundAllocated(2000.0);
+
+        transaction.setItem(item);
+        transaction.setAmount(1000.2);
         paymentRepository.save(transaction);
 
         Transaction t = new Transaction();
-        t.setId("util-2");
         t.setName("Maynilad");
-        t.setAmount(new BigDecimal("1034.2"));
+
+        Item i = new Item();
+        i.setName("Meralco");
+        i.setFundAllocated(2000.0);
+
+        t.setItem(i);
+        t.setAmount(1034.2);
         paymentRepository.save(t);
     }
 }

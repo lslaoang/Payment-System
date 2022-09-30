@@ -3,9 +3,7 @@ package com.payment.collection.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.math.BigDecimal;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -13,8 +11,14 @@ import java.math.BigDecimal;
 public class Transaction {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
     private String name;
-    private BigDecimal amount;
+    private Double amount;
+
+    @ManyToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "item_id")
+    private Item item;
+
 
 }
