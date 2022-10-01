@@ -1,2 +1,2 @@
-# Payment-System
-Payment System example and demonstration
+# Payment System
+Skeletal framework of a payment system.
