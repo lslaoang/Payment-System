@@ -1,7 +1,7 @@
 package com.payment.collection.service;
 
 import com.payment.collection.model.Transaction;
-import com.payment.collection.repo.PaymentRepository;
+import com.payment.collection.repository.PaymentRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

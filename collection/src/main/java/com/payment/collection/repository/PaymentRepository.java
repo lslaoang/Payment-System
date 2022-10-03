@@ -1,4 +1,5 @@
-package com.payment.collection.repo;
+package com.payment.collection.repository;
+
 
 import com.payment.collection.model.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
